@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#nav{
+    height: 100vh;
+    position: fixed;
+}
+#navbar{
+    height: 10vh;
+}
+
+#info{
+    align-items:center;
+    text-align:center;
+    justify-items: center;
+    height: 90vh;
+}
+
+.duration{
+    transition-duration: 5000ms;
+}
+
+.brand-name{
+font-family: 'Island Moments';
+color: #FFFFFF;
+}
+
+
