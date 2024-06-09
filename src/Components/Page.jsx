@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 import Main from "./Main";
@@ -15,6 +15,11 @@ export default function Page() {
   const handleNav = () => {
     setNav(!nav);
   };
+  const handleMainContentClick = () => {
+    if (nav) {
+      setNav(false);
+    }
+  };
   return (
     <>
       <div className="flex bg-blue-800 overflow-hidden" id="Home">
@@ -24,7 +29,7 @@ export default function Page() {
               ? "top-0 fixed left-[-50%] ease-linear duration-700"
               : "fixed left-[0%] ease-linear duration-700"
           }
-         >
+        >
           <ul
             className="z-10 w-1/2 overflow-y-auto touch-pan-y font-semibold items-center text-center text-blue-600 bg-blue-500 text-xs sm:text-sm"
             id="nav"
@@ -188,7 +193,7 @@ export default function Page() {
             </p>
           </ul>
         </sidenav>
-        <div className="w-screen ">
+        <div className="w-screen" onClick={handleMainContentClick}>
           <navbar
             className="flex justify-between text-white text-lg font-semibold items-center px-2 md:mr-12 md:my-2 "
             id="navbar"
