@@ -18,10 +18,6 @@
     height: 80vh;
 }
 
-.duration{
-    transition-duration: 5000ms;
-}
-
 .brand-name{
 font-family: 'Island Moments';
 color: #FFFFFF;
