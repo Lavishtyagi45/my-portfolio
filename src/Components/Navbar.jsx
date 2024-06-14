@@ -24,13 +24,13 @@ export default function Navbar({ nav, handleNav }) {
 
 function NavItem(props){
   return(
-      <li className=" cursor-pointer hover:translate-y-1 hover:bg-blue-600 hover:text-white hover:rounded  w-3/4 m-auto py-6">
+      <li className=" cursor-pointer hover:translate-y-1 hover:bg-blue-600 hover:text-white hover:rounded mx-2 py-2 xl:mx-6">
       <a
         href={props.href}
         className=" grid justify-items-center"
       >
         {props.icon}
-        <p>{props.text}</p>
+        <p className="md:hidden lg:flex">{props.text}</p>
       </a>
     </li>
   )
