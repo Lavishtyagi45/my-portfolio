@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import I1 from "./Images/Frame1.png";
 
 export default function AsideNav({ nav, handleNav }) {
   return (
@@ -15,11 +14,6 @@ export default function AsideNav({ nav, handleNav }) {
         <div onClick={handleNav} className="cursor-pointer flex md:hidden z-10 text-white">
           <AiOutlineClose size={24} />
         </div>
-        <li className="text-black w-3/4 m-auto">
-          <img src={I1} alt="..." className="my-2 mx-auto w-full" />
-          <h2 className="sm:text-lg text-normal font-semibold">Lavish Tyagi</h2>
-          <p>Student | Front-end Developer</p>
-        </li>
         <ul className="my-6 py-6 bg-white w-4/5 mx-auto rounded">
           <NavItem href="#Home" handleNav={handleNav} icon={<HomeIcon />} text="Home" />
           <NavItem href="#About" handleNav={handleNav} icon={<AboutIcon />} text="About Me" />
